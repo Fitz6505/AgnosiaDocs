@@ -1,125 +1,138 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy</title>
-  <meta name="description" content="Privacy Policy for Agnosia" />
-
+  <meta name="description" content="Privacy Policy for Agnosia by Agnosia Team">
   <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #111827;
-      --bg-alt: #1f2937;
-      --text: #f9fafb;
-      --muted: #d1d5db;
-      --accent: #3b82f6;
-      --border: #374151;
-      --focus: #93c5fd;
-    }
+  :root {
+    color-scheme: light dark;
+    --bg: #111827;
+    --bg-alt: #1f2937;
+    --text: #f9fafb;
+    --muted: #d1d5db;
+    --accent: #3b82f6;
+    --border: #374151;
+    --focus: #93c5fd;
+  }
 
-    * {
-      box-sizing: border-box;
-    }
+  * {
+    box-sizing: border-box;
+  }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  header,
+  main {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: clamp(1.25rem, 2.5vw, 2.5rem);
+  }
+
+  header {
+    padding-bottom: 0;
+  }
+
+  h1 {
+    margin: 0 0 0.75rem;
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
+    line-height: 1.15;
+  }
+
+  h2 {
+    margin: 2.2rem 0 0.9rem;
+    font-size: clamp(1.3rem, 2.7vw, 1.7rem);
+    line-height: 1.25;
+  }
+
+  p {
+    margin: 0.75rem 0;
+  }
+
+  ul {
+    margin: 0.5rem 0 1.25rem 1.25rem;
+    padding: 0;
+  }
+
+  li {
+    margin: 0.4rem 0;
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus-visible {
+    text-decoration: underline;
+  }
+
+  a:focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 3px;
+    border-radius: 0.25rem;
+  }
+
+  .box {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 1.25rem 1.25rem 1rem;
+  }
+
+  .last-updated {
+    margin-top: 0.5rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+    font-style: italic;
+  }
+
+  nav {
+    margin-top: 2rem;
+  }
+
+  footer {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0 2.5rem 3rem;
+    font-size: 0.875rem;
+    opacity: 0.8;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
     html {
-      scroll-behavior: smooth;
+      scroll-behavior: auto;
     }
 
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family:
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        sans-serif;
-      font-size: 16px;
-      line-height: 1.55;
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition: none !important;
     }
-
-    header,
-    main {
-      max-width: 880px;
-      margin: 0 auto;
-      padding: clamp(1.25rem, 2.5vw, 2.5rem);
-    }
-
-    header {
-      padding-bottom: 0;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: clamp(1.9rem, 4vw, 2.6rem);
-      line-height: 1.15;
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-
-    h2 {
-      margin-top: 2rem;
-      font-size: clamp(1.3rem, 3vw, 1.7rem);
-      line-height: 1.25;
-    }
-
-    p {
-      margin: 1rem 0;
-    }
-
-    ul {
-      padding-left: 1.4rem;
-    }
-
-    li {
-      margin: 0.5rem 0;
-    }
-
-    a {
-      color: var(--accent);
-    }
-
-    a:focus-visible {
-      outline: 2px solid var(--focus);
-      outline-offset: 3px;
-      border-radius: 0.25rem;
-    }
-
-    code {
-      background: var(--bg-alt);
-      padding: 0.15rem 0.35rem;
-      border-radius: 0.35rem;
-    }
-
-    .box {
-      background: var(--bg-alt);
-      border: 1px solid var(--border);
-      border-radius: 0.75rem;
-      padding: clamp(1rem, 2.5vw, 1.5rem);
-    }
-
-    footer {
-      max-width: 880px;
-      margin: 0 auto;
-      padding: 0 2.5rem 3rem;
-      font-size: 0.875rem;
-      opacity: 0.8;
-    }
-
-    .last-updated {
-      margin-top: 0.5rem;
-      font-size: 0.95rem;
-      font-style: italic;
-      color: var(--muted);
-    }
-  </style>
+  }
+</style>
 
 </head>
-
 <body>
   <header>
     <h1>Privacy Policy</h1>
@@ -129,162 +142,211 @@
   <main>
     <section class="box">
       <h2>Your Privacy Matters</h2>
+      <p>
+        Agnosia Team ("we", "us", or "Agnosia Team") respects your privacy.
+        This Privacy Policy explains what information may be involved when you
+        use the Game and how Agnosia Team handles information made available to
+        us.
+      </p>
+    </section>
 
-```
-  <p>
-    Agnosia Team ("we", "us", or "Agnosia Team") respects your privacy.
-    This Privacy Policy explains what information may be involved when
-    you use our game and how we handle that information.
-  </p>
+    <section>
+      <h2>Information We Handle</h2>
+      <p>
+        Agnosia uses certain platform features and online services to provide
+        the Game. Information made available through those features may be
+        processed as necessary to provide, maintain, secure, and support the
+        Game.
+      </p>
+      <p>
+        Agnosia Team does not intentionally collect personal information that
+        is not needed for the operation, support, security, or functionality
+        of the Game.
+      </p>
+    </section>
 
-  <h2>Information We Collect</h2>
+    <section>
+      <h2>Meta Platform Features</h2>
+      <p>
+        The following Meta platform features are currently active and are used
+        by Agnosia:
+      </p>
+      <ul>
+        <li>
+          <strong>User ID:</strong> Used to identify your Meta account within
+          the Game and support account-related functionality.
+        </li>
+        <li>
+          <strong>User Profile:</strong> Used to access your Horizon username
+          and profile photo for use in the Game.
+        </li>
+        <li>
+          <strong>User Age Group:</strong> Used to receive your age group
+          information from Meta for age-related platform and Game
+          functionality.
+        </li>
+        <li>
+          <strong>In-App Purchases and/or Downloadable Content:</strong> Used
+          to provide and process in-app purchases and downloadable content.
+        </li>
+        <li>
+          <strong>Friends:</strong> Used to access your Meta friends
+          information where required for supported social and multiplayer
+          features.
+        </li>
+        <li>
+          <strong>Blocked Users:</strong> Used to access your Meta block list
+          so supported blocking and player-safety features can function.
+        </li>
+        <li>
+          <strong>Device Ban:</strong> Used to support device-level
+          restrictions and prevent a banned device from accessing the Game.
+        </li>
+      </ul>
+      <p>
+        The features listed above are currently active in the Game. Features
+        that are not listed as active are not represented by this policy as
+        currently being used by Agnosia.
+      </p>
+      <p>
+        Information provided through Meta platform features is subject to
+        Meta's applicable privacy policies and platform terms.
+      </p>
+    </section>
 
-  <p>
-    Agnosia is designed to minimize the personal information handled by
-    Agnosia Team. We do not intentionally collect personal information
-    that is not necessary to operate, maintain, support, or secure the
-    game.
-  </p>
+    <section>
+      <h2>Voice Communication</h2>
+      <p>
+        The Game may provide optional voice communication using your device's
+        microphone. When you use voice communication, your audio is transmitted
+        live so that other players can hear you.
+      </p>
+      <p>
+        Agnosia Team does not record, collect, store, or inspect your voice
+        communications. Agnosia Team does not maintain voice recordings or
+        voice-chat recordings on its own servers.
+      </p>
+      <p>
+        Voice communication is optional. You can control microphone access
+        through your device or platform settings.
+      </p>
+    </section>
 
-  <p>
-    Information may be processed by the platforms and third-party online
-    services required to provide features of the game. Those services
-    may process information according to their own privacy policies and
-    terms.
-  </p>
+    <section>
+      <h2>Third-Party Online Services</h2>
+      <p>
+        The Game uses third-party online services to provide multiplayer,
+        networking, authentication, voice communication, platform features,
+        purchases, and other online functionality.
+      </p>
+      <p>
+        Third-party providers may process information necessary to provide
+        their services. Those providers operate under their own privacy
+        policies and terms. Agnosia Team does not control the privacy
+        practices of independent third-party providers.
+      </p>
+    </section>
 
-  <h2>Voice Communication</h2>
+    <section>
+      <h2>Information You Provide to Us</h2>
+      <p>
+        If you contact Agnosia Team for support, we may receive information
+        that you voluntarily provide, such as your email address, message,
+        screenshots, or other information included in your request.
+      </p>
+      <p>
+        We use information provided through support communications as
+        reasonably necessary to respond to your request, provide assistance,
+        maintain the Game, address technical or safety issues, and comply
+        with applicable legal obligations.
+      </p>
+    </section>
 
-  <p>
-    The game may provide optional voice communication using your device's
-    microphone. When you use voice communication, your audio is transmitted
-    in real time so that other players can hear you.
-  </p>
+    <section>
+      <h2>Community Communications</h2>
+      <p>
+        Communications between players may be visible or audible to other
+        players. Do not share personal information that you do not want other
+        players to receive.
+      </p>
+      <p>
+        Information you voluntarily post in public community spaces, including
+        Discord or other third-party platforms, may be visible to other users
+        and is subject to those platforms' own policies and terms.
+      </p>
+    </section>
 
-  <p>
-    Agnosia Team does not record, collect, store, or inspect your voice
-    communications. We do not maintain recordings or voice-chat logs on
-    our servers.
-  </p>
+    <section>
+      <h2>Data Security</h2>
+      <p>
+        We take reasonable measures to protect information provided directly
+        to Agnosia Team. However, no method of transmission or electronic
+        storage can be guaranteed to be completely secure.
+      </p>
+    </section>
 
-  <p>
-    Voice communication is optional. You can choose whether to use the
-    microphone and whether to participate in voice communication.
-  </p>
+    <section>
+      <h2>Data Retention</h2>
+      <p>
+        Agnosia Team does not retain voice recordings or voice-chat recordings.
+        Information provided directly to us through support communications
+        may be retained only for as long as reasonably necessary for the
+        purposes described in this Privacy Policy, including support,
+        security, dispute resolution, and legal compliance.
+      </p>
+    </section>
 
-  <h2>Third-Party Services</h2>
+    <section>
+      <h2>Children's Privacy</h2>
+      <p>
+        The Game may use Meta's age-group information where the applicable
+        platform feature is enabled. We do not intentionally request or
+        collect personal information from children beyond information made
+        available through supported platform functionality or voluntarily
+        provided to us.
+      </p>
+      <p>
+        If you believe a child has provided personal information directly to
+        Agnosia Team that should not have been provided, contact us so we can
+        review the situation.
+      </p>
+    </section>
 
-  <p>
-    The game may use third-party online services to provide multiplayer,
-    authentication, networking, platform functionality, and other online
-    features.
-  </p>
+    <section>
+      <h2>Changes to This Privacy Policy</h2>
+      <p>
+        We may update this Privacy Policy when the Game, its services, or
+        applicable requirements change. The updated policy will be posted on
+        this page with a new "Last updated" date.
+      </p>
+    </section>
 
-  <p>
-    These third-party services may process technical information or other
-    information necessary to provide their services. Agnosia Team does
-    not control the privacy practices of independent third-party service
-    providers. Their own privacy policies and terms may apply when you
-    use services they provide.
-  </p>
+    <section>
+      <h2>Contact</h2>
+      <p>
+        Questions about this Privacy Policy can be sent to
+        <a href="mailto:fitzdida180@gmail.com">fitzdida180@gmail.com</a>.
+      </p>
+      <p>
+        You can also contact Agnosia Team through
+        <a href="https://discord.gg/7uyvMDuQxP" rel="noopener noreferrer">our Discord server</a>.
+      </p>
+    </section>
 
-  <h2>Information You Provide to Us</h2>
-
-  <p>
-    If you contact Agnosia Team for support or other assistance, we may
-    receive the information you choose to provide, such as your email
-    address, message, screenshots, or other information included in your
-    request.
-  </p>
-
-  <p>
-    We use information provided through support communications only as
-    reasonably necessary to respond to your request, provide assistance,
-    maintain the game, or address technical or safety issues.
-  </p>
-
-  <h2>Community and Player Communications</h2>
-
-  <p>
-    Communications made between players, including voice or other
-    communications, may be heard or received by other players. You should
-    avoid sharing personal information that you do not want other players
-    to receive.
-  </p>
-
-  <p>
-    Information you voluntarily post in public community spaces, such as
-    Discord or other community platforms, may be visible to other users
-    and is subject to the privacy policies and terms of those platforms.
-  </p>
-
-  <h2>Data Security</h2>
-
-  <p>
-    We take reasonable measures to protect information that is provided
-    directly to Agnosia Team. However, no method of transmission or
-    electronic storage can be guaranteed to be completely secure.
-  </p>
-
-  <h2>Data Retention</h2>
-
-  <p>
-    Agnosia Team does not retain voice recordings or voice-chat recordings.
-    Information provided directly to us through support or other
-    communications may be retained only for as long as reasonably
-    necessary to respond to requests, operate the game, maintain security,
-    resolve disputes, or comply with applicable legal obligations.
-  </p>
-
-  <h2>Children's Privacy</h2>
-
-  <p>
-    We do not intentionally collect personal information from children
-    for purposes unrelated to operating or supporting the game. If you
-    believe that a child has provided personal information directly to
-    Agnosia Team that should not have been provided, please contact us so
-    that we can review the situation.
-  </p>
-
-  <h2>Changes to This Privacy Policy</h2>
-
-  <p>
-    We may update this Privacy Policy from time to time to reflect changes
-    to the game, our services, or applicable requirements. When we make
-    changes, the updated policy will be posted on this page with a new
-    "Last updated" date.
-  </p>
-
-  <h2>Contact & Support</h2>
-
-  <p>
-    If you have questions about this Privacy Policy or how privacy is
-    handled in the game, you can contact us at
-    <a href="mailto:fitzdida180@gmail.com">fitzdida180@gmail.com</a>.
-  </p>
-
-  <p>
-    You can also contact the Agnosia community through
-    <a href="https://discord.gg/7uyvMDuQxP">
-      our Discord server
-    </a>.
-  </p>
-
-  <nav aria-label="Related documents">
-    <p>
-      Related:
-      <a href="terms-of-service.html">Terms of Service</a>
-      •
-      <a href="eula.html">EULA</a>
-    </p>
-  </nav>
-</section>
-```
-
+    <nav aria-label="Related documents">
+      <p>
+        Related:
+        <a href="terms-of-service.html">Terms of Service</a>
+        &bull;
+        <a href="eula.html">EULA</a>
+        &bull;
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </p>
+    </nav>
   </main>
 
   <footer>
-    <p>© 2026 Agnosia Team. All rights reserved.</p>
+    <p>&copy; 2026 Agnosia Team. All rights reserved.</p>
   </footer>
 </body>
 </html>
