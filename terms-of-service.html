@@ -1,272 +1,250 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Terms of Service</title>
-  <meta name="description" content="Terms of Service for the Game" />
-
+  <meta name="description" content="Terms of Service for Agnosia by Agnosia Team">
   <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #111827;
-      --bg-alt: #1f2937;
-      --text: #f9fafb;
-      --accent: #3b82f6;
-      --border: #374151;
-      --focus: #93c5fd;
-      font-size: 16px;
+  :root {
+    color-scheme: light dark;
+    --bg: #111827;
+    --bg-alt: #1f2937;
+    --text: #f9fafb;
+    --muted: #d1d5db;
+    --accent: #3b82f6;
+    --border: #374151;
+    --focus: #93c5fd;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  header,
+  main {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: clamp(1.25rem, 2.5vw, 2.5rem);
+  }
+
+  header {
+    padding-bottom: 0;
+  }
+
+  h1 {
+    margin: 0 0 0.75rem;
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
+    line-height: 1.15;
+  }
+
+  h2 {
+    margin: 2.2rem 0 0.9rem;
+    font-size: clamp(1.3rem, 2.7vw, 1.7rem);
+    line-height: 1.25;
+  }
+
+  p {
+    margin: 0.75rem 0;
+  }
+
+  ul {
+    margin: 0.5rem 0 1.25rem 1.25rem;
+    padding: 0;
+  }
+
+  li {
+    margin: 0.4rem 0;
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus-visible {
+    text-decoration: underline;
+  }
+
+  a:focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 3px;
+    border-radius: 0.25rem;
+  }
+
+  .box {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 1.25rem 1.25rem 1rem;
+  }
+
+  .last-updated {
+    margin-top: 0.5rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+    font-style: italic;
+  }
+
+  nav {
+    margin-top: 2rem;
+  }
+
+  footer {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0 2.5rem 3rem;
+    font-size: 0.875rem;
+    opacity: 0.8;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
     }
 
-    * {
-      box-sizing: border-box;
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition: none !important;
     }
+  }
+</style>
 
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, sans-serif;
-      line-height: 1.55;
-      background: var(--bg);
-      color: var(--text);
-    }
-
-    header,
-    main {
-      max-width: 880px;
-      margin: 0 auto;
-      padding: clamp(1.25rem, 2.5vw, 2.5rem);
-    }
-
-    header {
-      padding-bottom: 0;
-    }
-
-    h1 {
-      font-size: clamp(1.9rem, 4vw, 2.6rem);
-      margin: 0 0 .75rem;
-    }
-
-    h2 {
-      font-size: clamp(1.3rem, 2.7vw, 1.7rem);
-      margin: 2.2rem 0 .9rem;
-    }
-
-    p {
-      margin: .75rem 0;
-    }
-
-    ul {
-      margin: .5rem 0 1.25rem 1.25rem;
-      padding: 0;
-    }
-
-    li {
-      margin: .4rem 0;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:focus,
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .box {
-      background: var(--bg-alt);
-      border: 1px solid var(--border);
-      border-radius: .75rem;
-      padding: 1.25rem 1.25rem 1rem;
-    }
-
-    footer {
-      max-width: 880px;
-      margin: 0 auto;
-      padding: 0 2.5rem 3rem;
-      font-size: .875rem;
-      opacity: .8;
-    }
-
-    .last-updated {
-      font-style: italic;
-      font-size: .95rem;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      * {
-        animation-duration: .01ms !important;
-        animation-iteration-count: 1 !important;
-        transition: none !important;
-      }
-    }
-  </style>
 </head>
-
 <body>
-
   <header>
     <h1>Terms of Service</h1>
-    <p class="last-updated">Last Updated: 9/27/2026</p>
+    <p class="last-updated">Last updated: September 27, 2026</p>
   </header>
 
   <main>
-
-    <div class="box" role="region" aria-labelledby="overview-heading">
-      <h2 id="overview-heading">Agreement to Terms</h2>
-
+    <section class="box">
+      <h2>Agreement to Terms</h2>
       <p>
-        By using this Game, you agree to the following terms. If you do not
-        agree, please discontinue use of the Game and its online features.
+        By using Agnosia, you agree to these Terms of Service. If you do not
+        agree to these terms, please discontinue use of the Game and its online
+        features.
       </p>
-    </div>
+    </section>
 
     <section>
       <h2>Voice Communication</h2>
-
       <p>
-        The Game provides optional voice chat which requires access to your
-        device's microphone. Voice communication is transmitted live between
-        participants while using the feature and is not recorded, collected,
-        stored, or inspected by Agnosia Team.
+        The Game provides optional voice chat, which requires access to your
+        device's microphone. Voice is transmitted live to other participants.
+      </p>
+      <p>
+        Agnosia Team does not record, collect, store, or inspect voice
+        communications.
       </p>
     </section>
 
     <section>
       <h2>Online Services</h2>
-
       <p>
         The Game uses third-party online services to provide multiplayer,
-        communication, authentication, and other online functionality.
+        networking, voice communication, authentication, and other online
+        features. Third-party services may process information necessary to
+        provide those features under their own terms and privacy policies.
       </p>
-
-      <p>
-        Availability and operation of online features may depend on these
-        third-party services and may change or become unavailable from time
-        to time.
-      </p>
-
       <p>
         While using online features, you must behave respectfully. Harassment,
-        hateful conduct, exploiting, or other disruptive actions are prohibited.
+        hateful conduct, cheating, exploiting, or other disruptive behavior is
+        prohibited.
       </p>
     </section>
 
     <section>
       <h2>Community Standards &amp; Prohibitions</h2>
-
       <ul>
-        <li>
-          Do not attempt to damage, disrupt, or interfere with Agnosia Team's
-          services or infrastructure.
-        </li>
-
-        <li>
-          Respect other users' privacy — do not collect or share personal
-          details about others beyond public display names.
-        </li>
-
-        <li>
-          Do not threaten to reveal another person's private information.
-        </li>
-
-        <li>
-          Avoid sharing your own private data in public channels.
-        </li>
-
-        <li>
-          Hateful or bigoted language, including racist, sexist, homophobic,
-          transphobic speech, or slur baiting, is forbidden.
-        </li>
-
-        <li>
-          Play fairly — do not cheat, exploit, or purposefully promote glitches.
-          If you discover a bug, report it in our Discord:
-          <a href="https://discord.gg/7uyvMDuQxP" rel="noopener">
-            https://discord.gg/7uyvMDuQxP
-          </a>.
-        </li>
-
-        <li>
-          Bullying, predatory behavior, threats, or any invasive or sexually
-          explicit conduct is not allowed.
-        </li>
-
-        <li>
-          Do not impersonate other users, public figures, or Agnosia Team staff.
-        </li>
-
-        <li>
-          Do not run scams, attempt to deceive, or manipulate other players
-          for personal gain.
-        </li>
-
-        <li>
-          Refrain from posting content that is inappropriate or violates
-          community norms.
-        </li>
-
-        <li>
-          Attempts to circumvent rules or evade enforcement, including ban
-          evasion, are grounds for severe action.
-        </li>
+        <li>Do not attempt to damage, disrupt, or interfere with Agnosia Team's services or infrastructure.</li>
+        <li>Respect other users' privacy. Do not collect or share personal details about others beyond information they have made public.</li>
+        <li>Do not threaten to reveal another person's private information.</li>
+        <li>Avoid sharing your own private information in public channels.</li>
+        <li>Hateful or bigoted language, including racist, sexist, homophobic, or transphobic speech and slur baiting, is prohibited.</li>
+        <li>Do not cheat, exploit, or intentionally abuse glitches. Report security or gameplay bugs through our Discord.</li>
+        <li>Bullying, predatory behavior, threats, harassment, or sexually explicit conduct directed at other players is prohibited.</li>
+        <li>Do not impersonate other users, public figures, or Agnosia Team staff.</li>
+        <li>Do not run scams or attempt to deceive or manipulate other players for personal gain.</li>
+        <li>Do not post content that violates applicable law or these community standards.</li>
+        <li>Do not attempt to circumvent enforcement, including ban evasion.</li>
       </ul>
+      <p>
+        Community and moderation matters may be reported through
+        <a href="https://discord.gg/7uyvMDuQxP" rel="noopener noreferrer">our Discord server</a>.
+      </p>
     </section>
 
     <section>
       <h2>Account &amp; Access</h2>
-
       <p>
-        Agnosia Team reserves the right to suspend, restrict, or terminate
-        online access for users who violate these terms or misuse the Game.
+        Agnosia Team may suspend, restrict, or terminate access to online
+        features when a user violates these terms, misuses the Game, or
+        engages in conduct that threatens the security or integrity of the
+        Game or its community.
       </p>
     </section>
 
     <section>
       <h2>Intellectual Property</h2>
-
       <p>
-        The Game and all associated intellectual property are owned by
-        Agnosia Team. No ownership rights are transferred to users except
-        for the limited license to use the Game as described elsewhere.
+        Agnosia and its associated software, content, branding, and other
+        intellectual property are owned by or licensed to Agnosia Team.
+        Except for the rights expressly granted to you, no ownership rights
+        are transferred to you.
       </p>
     </section>
 
     <section>
       <h2>Disclaimer</h2>
-
       <p>
-        The Game is distributed on an "as available" basis. To the extent
-        permitted by law, Agnosia Team disclaims all warranties and is not
-        responsible for losses or damages related to your use of the Game.
+        The Game and its online features are provided on an "as available"
+        basis. To the extent permitted by applicable law, Agnosia Team
+        disclaims warranties not expressly provided in these terms and is not
+        responsible for losses or damages that cannot lawfully be excluded.
       </p>
     </section>
 
     <section>
       <h2>Moderation &amp; Appeals</h2>
-
       <p>
         Agnosia Team moderators and staff may enforce these rules and apply
-        sanctions, including temporary or permanent bans. If you believe a
-        moderation decision was incorrect, you may appeal through our Discord
-        server:
-        <a href="https://discord.gg/7uyvMDuQxP" rel="noopener">
-          https://discord.gg/7uyvMDuQxP
-        </a>.
+        sanctions, including temporary or permanent restrictions or bans.
+        If you believe a moderation decision was incorrect, you may appeal
+        through
+        <a href="https://discord.gg/7uyvMDuQxP" rel="noopener noreferrer">our Discord server</a>.
       </p>
     </section>
 
     <section>
       <h2>Contact</h2>
-
       <p>
-        For clarifications about these terms, reach out to a Moderator on
-        Discord or send an email to
-        <a href="mailto:fitzdida180@gmail.com">
-          fitzdida180@gmail.com
-        </a>.
+        For questions about these terms, contact Agnosia Team at
+        <a href="mailto:fitzdida180@gmail.com">fitzdida180@gmail.com</a>.
+        You can also contact us through
+        <a href="https://discord.gg/7uyvMDuQxP" rel="noopener noreferrer">our Discord server</a>.
       </p>
     </section>
 
@@ -274,17 +252,31 @@
       <p>
         Related:
         <a href="terms-of-service.html">Terms of Service</a>
-        •
+        &bull;
         <a href="eula.html">EULA</a>
+        &bull;
+        <a href="privacy-policy.html">Privacy Policy</a>
       </p>
     </nav>
-
   </main>
 
   <footer>
     <p>&copy; 2026 Agnosia Team. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
-```
+terms-of-service.html
+HTML
+eula.html
+HTML
+privacy-policy.html
+HTML
+
+Comp AI
+
+SOC 1 in Days
+
+AI evidence, fixed-fee audit. Done fast.
+
+Ad
+More options
